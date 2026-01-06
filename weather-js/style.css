@@ -1,0 +1,38 @@
+body {
+  background-color: #1e2329;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.weather-card {
+  width: 900px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #2b3138;
+}
+
+.left-panel {
+  background: linear-gradient(160deg, #4e8cff, #3b5bdb);
+  text-align: center;
+}
+
+.left-panel img {
+  width: 120px;
+}
+
+.left-panel h1 {
+  font-size: 48px;
+  margin-top: 10px;
+}
+
+.right-panel {
+  color: #fff;
+}
+
+.weather-details .row div {
+  padding: 6px 0;
+  border-bottom: 1px solid #3a3f45;
+}
+
+
+
+

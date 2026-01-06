@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container vh-100 d-flex align-items-center justify-content-center">
+  <div class="weather-card row g-0 shadow-lg">
+
+    <div class="col-md-5 left-panel text-white p-4">
+      <h2 id="day">Monday</h2>
+      <p id="date">18 September 2023</p>
+
+      <div class="weather-icon my-4">
+        <img id="icon" src="" alt="Weather Icon">
+      </div>
+
+      <h1><span id="temp">--</span>°C</h1>
+      <p id="condition">Few Clouds</p>
+    </div>
+
+    <div class="col-md-7 right-panel p-4">
+      <div class="d-flex mb-4">
+        <input type="text" id="cityInput" class="form-control me-2" placeholder="Search Location">
+       <button class="btn btn-primary" onclick="getWeather()">Search</button>
+
+      </div>
+
+      <div class="weather-details mb-4">
+        <div class="row">
+          <div class="col-6">Name</div>
+          <div class="col-6 text-end" id="city">--</div>
+
+          <div class="col-6">Temp</div>
+          <div class="col-6 text-end"><span id="temp2">--</span>°C</div>
+
+          <div class="col-6">Humidity</div>
+          <div class="col-6 text-end"><span id="humidity">--</span>%</div>
+
+          <div class="col-6">Wind Speed</div>
+          <div class="col-6 text-end"><span id="wind">--</span> km/h</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
